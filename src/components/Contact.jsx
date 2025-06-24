@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-10">
-      <h2 className="text-3xl font-semibold mb-6">Contact Me</h2>
+    <section id="contact" className="py-16">
+      <h2 className="text-3xl font-semibold mb-8">Contact Me</h2>
       <p className="mb-4 text-gray-700 max-w-xl">
         Feel free to reach out to me via email or connect on LinkedIn and
         GitHub.
@@ -13,7 +13,8 @@ export default function Contact() {
           <strong>Email:</strong>{" "}
           <a
             href="mailto:mohiburrahmansani@gmail.com"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 hover:underline hover:text-blue-800 
+            transition-colors duration-200"
           >
             mohiburrahmansani@gmail.com
           </a>
@@ -27,7 +28,8 @@ export default function Contact() {
             href="https://www.linkedin.com/in/Mohibur-Rahman-Sani"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 hover:underline hover:text-blue-800 
+            transition-colors duration-200"
           >
             Mohibur-Rahman-Sani
           </a>
@@ -38,7 +40,8 @@ export default function Contact() {
             href="https://github.com/Sani-Mohibur"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 hover:underline hover:text-blue-800 
+            transition-colors duration-200"
           >
             Sani-Mohibur
           </a>

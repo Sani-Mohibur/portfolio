@@ -18,7 +18,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="px-3 py-1 hover:text-blue-500"
+              className="px-3 py-1 hover:text-blue-500 transition-colors duration-200"
               onClick={(e) => {
                 e.preventDefault();
                 const section = document.querySelector(link.href);

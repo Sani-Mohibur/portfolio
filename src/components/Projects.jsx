@@ -42,11 +42,16 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-10">
-      <h2 className="text-3xl font-semibold mb-6">Projects</h2>
+    <section id="projects" className="py-16">
+      <h2 className="text-3xl font-semibold mb-8">Projects</h2>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white rounded-xl shadow p-5">
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow p-6 border 
+            border-gray-200 transition-all duration-300 ease-in-out 
+            hover:shadow-xl hover:-translate-y-2"
+          >
             <h3 className="text-xl font-bold text-blue-600 mb-2">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 {project.title}

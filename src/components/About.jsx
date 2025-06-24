@@ -3,9 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <section id="about" className="py-10">
-        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-        <p className="text-gray-700 max-w-3xl">
+      <section id="about" className="py-16">
+        <h2 className="text-3xl font-semibold mb-8">About Me</h2>
+        <p className="text-gray-700 max-w-3xl leading-relaxed">
           I'm Md. Mohibur Rahman Sani, a highly motivated and result-driven
           Computer Science graduate majoring in Software Engineering at AIUB. I
           have a strong foundation in programming, web development, and hardware

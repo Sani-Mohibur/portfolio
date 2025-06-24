@@ -3,8 +3,8 @@ import React from "react";
 const Skills = () => {
   return (
     <div>
-      <section id="skills" className="py-10">
-        <h2 className="text-3xl font-semibold mb-4">Skills</h2>
+      <section id="skills" className="py-16">
+        <h2 className="text-3xl font-semibold mb-8">Skills</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-gray-700">
           <div>
