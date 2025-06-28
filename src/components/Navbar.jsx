@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-xl font-bold">Md. Mohibur Rahman Sani</h1>
+        <h1 className="text-xl font-bold">Mohibur Rahman Sani</h1>
         <div className="space-x-4">
           {links.map((link) => (
             <a
