@@ -22,9 +22,9 @@ const Skills = () => {
           <div>
             <h3 className="font-semibold text-lg mb-1">Web Development</h3>
             <ul className="list-disc list-inside">
-              <li>HTML, CSS, JavaScript</li>
-              <li>React</li>
-              <li>Node.js</li>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>React, Tailwind CSS (v4.1), Bootstrap</li>
+              <li>Node.js, Express.js, Socket.IO, PHP</li>
             </ul>
           </div>
 
