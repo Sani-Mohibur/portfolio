@@ -11,7 +11,7 @@ export default function Resume() {
       </p>
       <a
         href={resumePDF}
-        download="Md_Mohibur_Rahman_Sani_Resume.pdf"
+        download="Mohibur Rahman Sani.pdf"
         className="inline-block bg-blue-600 text-white px-6 py-3 rounded 
         hover:bg-blue-700 transition-colors duration-200 focus:outline-none 
         focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
