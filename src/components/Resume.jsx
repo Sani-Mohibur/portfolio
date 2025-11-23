@@ -1,5 +1,5 @@
 import React from "react";
-import resumePDF from "../assets/Mohibur_Rahman_Sani_Resume.pdf"; // Put your CV PDF in assets folder
+import resumePDF from "../assets/Mohibur_Rahman_Sani_Resume_v2.pdf";
 
 export default function Resume() {
   return (
