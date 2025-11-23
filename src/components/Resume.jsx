@@ -1,5 +1,4 @@
-import React from "react";
-import resumePDF from "../assets/Mohibur_Rahman_Sani_Resume_v2.pdf";
+//import resumePDF from "../assets/Mohibur_Rahman_Sani_Resume_v2.pdf";
 
 export default function Resume() {
   return (
@@ -10,8 +9,10 @@ export default function Resume() {
         and experience.
       </p>
       <a
-        href={resumePDF}
+        href="/portfolio/resume.pdf"
         download="Mohibur Rahman Sani.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-block bg-blue-600 text-white px-6 py-3 rounded 
         hover:bg-blue-700 transition-colors duration-200 focus:outline-none 
         focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
