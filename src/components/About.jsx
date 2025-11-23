@@ -6,15 +6,14 @@ const About = () => {
       <section id="about" className="py-16">
         <h2 className="text-3xl font-semibold mb-8">About Me</h2>
         <p className="text-gray-700 max-w-3xl leading-relaxed">
-          I'm Md. Mohibur Rahman Sani, --------------- a highly motivated and
-          result-driven Computer Science graduate majoring in Software
-          Engineering at AIUB. I have a strong foundation in programming, web
-          development, and hardware integration. My passion lies in creating
-          impactful and innovative tech solutions. With experience in leading
-          and organizing technical and cultural programs, I combine technical
-          proficiency with strong communication and leadership skills. I'm
-          always eager to learn, adapt, and contribute meaningfully to projects
-          in the field of technology.
+          I'm Md. Mohibur Rahman Sani, a highly motivated and result-driven
+          Computer Science graduate majoring in Software Engineering at AIUB. I
+          have a strong foundation in programming, web development, and hardware
+          integration. My passion lies in creating impactful and innovative tech
+          solutions. With experience in leading and organizing technical and
+          cultural programs, I combine technical proficiency with strong
+          communication and leadership skills. I'm always eager to learn, adapt,
+          and contribute meaningfully to projects in the field of technology.
         </p>
       </section>
     </div>
