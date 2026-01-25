@@ -24,7 +24,7 @@ export default function Footer() {
           >
             Mohibur Rahman Sani
           </h2>
-          <p className="text-sm mt-2">Full-Stack Developer</p>
+          <p className="text-sm mt-2">Backend Developer</p>
         </div>
 
         {/* Center Links */}
