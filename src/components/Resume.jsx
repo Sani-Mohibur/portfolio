@@ -1,5 +1,3 @@
-//import resumePDF from "../assets/Mohibur_Rahman_Sani_Resume_v2.pdf";
-
 export default function Resume() {
   return (
     <section id="resume" className="py-16">
@@ -9,7 +7,7 @@ export default function Resume() {
         and experience.
       </p>
       <a
-        href="/portfolio/resume.pdf"
+        href="/portfolio/SaniMohibur_CV.pdf"
         download="Mohibur Rahman Sani.pdf"
         target="_blank"
         rel="noopener noreferrer"
