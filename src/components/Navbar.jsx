@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Navbar() {
   const links = [
     { name: "About", href: "#about" },
