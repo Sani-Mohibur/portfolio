@@ -1,4 +1,3 @@
-import { useState } from "react";
 import React from "react";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -11,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-stone-100 min-h-screen">
+    <>
       <Navbar />
       <main className="max-w-5xl mx-auto p-4">
         <FadeInSection>
@@ -31,7 +30,7 @@ function App() {
         </FadeInSection>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
