@@ -1,6 +1,6 @@
 export default function Resume() {
   return (
-    <section id="resume" className="py-16">
+    <section id="resume" className="py-10">
       <h2 className="text-3xl font-semibold mb-8">Resume</h2>
       <p className="mb-4 text-gray-700 max-w-xl">
         You can download my complete resume to know more about my qualifications

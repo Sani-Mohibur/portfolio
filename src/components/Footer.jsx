@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
 
           {/* Theme Toggle Button */}
-          <button
+          {/* <button
             disabled
             onClick={() => setDark(!dark)}
             className={
@@ -93,7 +93,7 @@ export default function Footer() {
             }
           >
             {dark ? "☀️ Light" : "🌙 Dark"}
-          </button>
+          </button> */}
         </div>
       </div>
 

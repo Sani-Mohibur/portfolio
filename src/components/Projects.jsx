@@ -42,29 +42,32 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-16">
-      <h2 className="text-3xl font-semibold mb-8">Projects</h2>
+    <section id="projects" className="py-10">
+      <h2 className="text-3xl font-semibold mb-8 dark:text-white">Projects</h2>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow p-6 border 
-            border-gray-200 transition-all duration-300 ease-in-out 
+            className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 border 
+            border-gray-200 dark:border-gray-700 transition-all duration-300 ease-in-out 
             hover:shadow-xl hover:-translate-y-2"
           >
-            <h3 className="text-xl font-bold text-blue-600 mb-2">
+            <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 {project.title}
               </a>
             </h3>
-            <p className="mb-3 text-gray-700">{project.description}</p>
-            <ul className="list-disc list-inside text-sm mb-2">
+            <p className="mb-3 text-gray-700 dark:text-gray-300">
+              {project.description}
+            </p>
+            <ul className="list-disc list-inside text-sm mb-2 text-gray-600 dark:text-gray-400">
               {project.features.map((feature, i) => (
                 <li key={i}>{feature}</li>
               ))}
             </ul>
-            <p className="text-sm text-gray-500">
-              <strong>Technologies:</strong> {project.tech.join(", ")}
+            <p className="text-sm text-gray-500 dark:text-gray-500">
+              <strong className="dark:text-gray-300">Technologies:</strong>{" "}
+              {project.tech.join(", ")}
             </p>
           </div>
         ))}
