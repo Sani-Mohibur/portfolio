@@ -98,8 +98,8 @@ const Skills = () => {
                   {group.items.map((skill, idx) => (
                     <motion.span
                       key={idx}
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
+                      // whileHover={{ scale: 1.1 }}
+                      // whileTap={{ scale: 0.95 }}
                       className="px-3 py-1 text-sm rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
                     >
                       {skill}
