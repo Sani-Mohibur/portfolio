@@ -1,74 +1,116 @@
 import React from "react";
+import { Github, ExternalLink } from "lucide-react";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Solar Explorer",
-      link: "https://github.com/Sani-Mohibur/Solar-Explorer",
+      title: "Mental Health Tracker",
+      github: "https://github.com/Sani-Mohibur/mental-health-tracker",
+      live: "https://mental-health-tracker-two.vercel.app/",
+      image: "mental.png",
       description:
-        "An interactive web-based application that allows users to explore the solar system with scientific facts and stunning visuals.",
-      features: [
-        "Interactive 3D visualization",
-        "Clickable planets and moons",
-        "Scientific facts and trivia",
-        "Realistic graphics and motion",
-      ],
-      tech: ["HTML", "CSS"],
+        "A responsive mental wellness platform for tracking moods, journaling thoughts, and practicing guided self-care.",
+      tech: ["React", "Tailwind", "Vite", "React Router"],
     },
     {
-      title: "Student Management System",
-      link: "https://github.com/Sani-Mohibur/Student-Management-System",
+      title: "HireMe API",
+      github: "https://github.com/Sani-Mohibur/hireme-api",
+      live: "",
+      image: "hireme.png",
       description:
-        "A web application that manages student records with CRUD operations and role-based access control.",
-      features: [
-        "Add, update, delete, and view student data",
-        "Search and filter functionality",
-        "Data validation and secure access",
-      ],
-      tech: ["HTML", "CSS", "JavaScript"],
+        "Scalable backend for a job portal supporting recruiters and job seekers with secure workflows.",
+      tech: ["TypeScript", "Express", "MongoDB", "Zod"],
     },
     {
-      title: "Book Management Project",
-      link: "https://github.com/Sani-Mohibur/Book-Management-Project",
+      title: "Real-Time Chat App",
+      github: "https://github.com/Sani-Mohibur/chat-backend",
+      live: "",
+      image: "chat.png",
       description:
-        "A book management system with features to organize and track book records efficiently.",
-      features: [
-        "Manage book details",
-        "Search and filter books",
-        "Organize by genre, author, etc.",
-      ],
-      tech: ["HTML", "CSS", "JavaScript", "PHP"],
+        "Real-time chat system with instant messaging and synchronization across clients.",
+      tech: ["Node.js", "Socket.IO", "Express"],
+    },
+    {
+      title: "Ecommerce API",
+      github: "https://github.com/Sani-Mohibur/chat-backend",
+      live: "",
+      image: "ecommerce.png",
+      description:
+        "REST API for ecommerce platform handling products, carts, and authentication.",
+      tech: ["Node.js", "Express", "MongoDB", "JWT"],
     },
   ];
 
   return (
-    <section id="projects" className="py-10">
-      <h2 className="text-3xl font-semibold mb-8 dark:text-white">Projects</h2>
-      <div className="grid gap-6 md:grid-cols-2">
+    <section id="projects" className="py-20">
+      <h2 className="text-3xl font-bold mb-12 text-center dark:text-white">
+        Projects
+      </h2>
+
+      <div className="grid md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 border 
-            border-gray-200 dark:border-gray-700 transition-all duration-300 ease-in-out 
-            hover:shadow-xl hover:-translate-y-2"
+            className="group relative rounded-2xl overflow-hidden shadow-lg"
           >
-            <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                {project.title}
-              </a>
-            </h3>
-            <p className="mb-3 text-gray-700 dark:text-gray-300">
-              {project.description}
-            </p>
-            <ul className="list-disc list-inside text-sm mb-2 text-gray-600 dark:text-gray-400">
-              {project.features.map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
-            </ul>
-            <p className="text-sm text-gray-500 dark:text-gray-500">
-              <strong className="dark:text-gray-300">Technologies:</strong>{" "}
-              {project.tech.join(", ")}
-            </p>
+            {/* Image */}
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-64 object-cover transform transition duration-500 ease-out group-hover:scale-110"
+            />
+
+            {/* Base Gradient (always visible) */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+            {/* Always visible title */}
+            <div className="absolute bottom-0 p-4 text-white">
+              <h3 className="text-lg font-semibold">{project.title}</h3>
+            </div>
+
+            {/* Hover / Expanded Content */}
+            <div className="absolute inset-0 p-6 flex flex-col justify-end bg-black/80 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition duration-300 text-white">
+              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+
+              <p className="text-sm mb-3">{project.description}</p>
+
+              {/* Tech */}
+              <div className="flex flex-wrap gap-2 mb-3">
+                {project.tech.map((t, i) => (
+                  <span
+                    key={i}
+                    className="text-xs bg-white/20 px-2 py-1 rounded"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              {/* Links */}
+              <div className="flex gap-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-sm hover:underline"
+                >
+                  <Github size={16} />
+                  Code
+                </a>
+
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-sm hover:underline"
+                  >
+                    <ExternalLink size={16} />
+                    Live
+                  </a>
+                )}
+              </div>
+            </div>
           </div>
         ))}
       </div>
