@@ -17,6 +17,7 @@ const Skills = () => {
         "HTML5",
         "CSS3",
         "React",
+        "Next.js",
         "Tailwind CSS",
         "Bootstrap",
         "Node.js",
