@@ -24,7 +24,7 @@ export default function Footer() {
           >
             Mohibur Rahman Sani
           </h2>
-          <p className="text-sm mt-2">Backend Developer</p>
+          <p className="text-sm mt-2">Full Stack Developer</p>
         </div>
 
         {/* Center Links */}
@@ -81,19 +81,6 @@ export default function Footer() {
               <Mail size={18} />
             </a>
           </div>
-
-          {/* Theme Toggle Button */}
-          {/* <button
-            disabled
-            onClick={() => setDark(!dark)}
-            className={
-              dark
-                ? "px-3 py-1 rounded-full bg-gray-800 text-white"
-                : "px-3 py-1 rounded-full bg-gray-200 text-black"
-            }
-          >
-            {dark ? "☀️ Light" : "🌙 Dark"}
-          </button> */}
         </div>
       </div>
 
